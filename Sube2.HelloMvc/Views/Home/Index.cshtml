@@ -1,8 +1,39 @@
-﻿@{
+﻿﻿@{
     ViewData["Title"] = "Home Page";
 }
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+<div class="container my-5">
+    <div class="text-center">
+        <h1 class="display-4">MVC ÖDEV</h1>
+        <p class="lead">OKUL MVC PROJESİ</p>
+    </div>
+    <div class="row my-4">
+        <div class="col-md-4">
+            <div class="card shadow">
+                <div class="card-body text-center">
+                    <h5 class="card-title">Öğrenci Ekle</h5>
+                    <p class="card-text">Yeni bir öğrenci eklemek için buraya tıklayın.</p>
+                    <a href="/Student/AddStudent" class="btn btn-primary">Öğrenci Ekle</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card shadow">
+                <div class="card-body text-center">
+                    <h5 class="card-title">Ders Ekle</h5>
+                    <p class="card-text">Yeni bir ders eklemek için buraya tıklayın.</p>
+                    <a href="/Ders/AddDers" class="btn btn-primary">Ders Ekle</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card shadow">
+                <div class="card-body text-center">
+                    <h5 class="card-title">Öğrenci Düzenle</h5>
+                    <p class="card-text">Var olan bir öğrenciyi düzenlemek için buraya tıklayın.</p>
+                    <a href="/Student/EditStudent" class="btn btn-primary">Öğrenci Düzenle</a>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>

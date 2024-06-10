@@ -10,7 +10,7 @@
     <title>Ogrenci Detay</title>
 </head>
 <body>
-    @Model.Ders.Dersad
+    @Model.Ders.DersAd
     @Model.Ogrenci.Ad
     @Model.Ogretmen.Ad
 
@@ -18,7 +18,7 @@
     <h2>ViewData ile gelen öğrenci bilgileri</h2>
     @if (ViewData["ogrenci"] != null)
     {
-        <p>Ad:@(((Ogrenci)ViewData["ogrenci"]).Ad)</p>
+        <p>Ad:@(((Ogrenci)ViewData["ogrenci"]).Ad)</p> //ogrenci tipini dönüştür ve ad ile eriş
     }
     else
     {

@@ -3,15 +3,29 @@
     ViewData["Title"] = "AddStudent";
 }
 
-<h1>Öğrenci Ekleme İşlemi</h1>
-
-
-<form asp-action="AddStudent" asp-controller="Student" method="post">
-    <label asp-for="Ad"></label>
-    <input asp-for="Ad" />
-    <label>Soyad:</label>
-    <input asp-for="Soyad" />
-    <label>Numara</label>
-    <input asp-for="Numara" />
-    <input type="submit" value="Kaydet" />
-</form>
+<div class="container my-5">
+    <div class="card shadow">
+        <div class="card-header bg-primary text-white">
+            <h2 class="mb-0">Öğrenci Ekle</h2>
+        </div>
+        <div class="card-body">
+            <form asp-action="AddStudent" asp-controller="Student" method="post">
+                <div class="mb-3">
+                    <label asp-for="Ad" class="form-label"></label>
+                    <input asp-for="Ad" class="form-control" />
+                </div>
+                <div class="mb-3">
+                    <label asp-for="Soyad" class="form-label">Soyad:</label>
+                    <input asp-for="Soyad" class="form-control" />
+                </div>
+                <div class="mb-3">
+                    <label asp-for="Numara" class="form-label">Numara</label>
+                    <input asp-for="Numara" class="form-control" />
+                </div>
+                <div class="text-center">
+                    <button type="submit" class="btn btn-primary btn-lg">Kaydet</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

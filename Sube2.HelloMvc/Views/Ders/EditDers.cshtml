@@ -1,0 +1,33 @@
+﻿﻿
+@model Ders
+@{
+    ViewData["Title"] = "EditDers";
+}
+
+<div class="container my-5">
+    <div class="card shadow">
+        <div class="card-header bg-primary text-white">
+            <h2 class="mb-0">Dersleri Düzenle</h2>
+        </div>
+        <div class="card-body">
+            <form asp-action="EditDers" asp-controller="Ders" method="post">
+                <input asp-for="Dersid" type="hidden" />
+                <div class="mb-3">
+                    <label for="DersKodu" class="form-label">Ders Kodu</label>
+                    <input asp-for="DersKodu" class="form-control" id="DersKodu" />
+                </div>
+                <div class="mb-3">
+                    <label for="DersAd" class="form-label">Ders Adı</label>
+                    <input asp-for="DersAd" class="form-control" id="DersAd" />
+                </div>
+                <div class="mb-3">
+                    <label for="Kredi" class="form-label">Kredi</label>
+                    <input asp-for="Kredi" class="form-control" id="Kredi" />
+                </div>
+                <div class="text-center">
+                    <button type="submit" class="btn btn-primary btn-lg">Kaydet</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
